@@ -24,7 +24,7 @@ This is a solution to the [Result Summary component challenge on Frontend Mentor
 ### Links
 
 - Solution URL: [https://github.com/nvshanmukh/result-summary-component](https://github.com/nvshanmukh/result-summary-component)
-- Live Site URL: [https://nvshanmukh.github.io/result-summary-component/](https://nvshanmukh.github.io/result-summmary-component/)
+- Live Site URL: [https://nvshanmukh.github.io/result-summary-component/](https://nvshanmukh.github.io/result-summary-component/)
 
 ## My process
 
