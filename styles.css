@@ -1,0 +1,422 @@
+:root {
+    --red: hsl(0, 100%, 67%);
+    --yellow: hsl(39, 100%, 56%);
+    --green: hsl(166, 100%, 37%);
+    --blue: hsl(234, 85%, 45%);
+    --bg-purple: hsl(252, 100%, 67%);
+    --bg-dark-blue: hsl(241, 81%, 54%);
+    --circle-violet: hsla(256, 72%, 46%, 1);
+    --circle-blue: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    --font-family: 'Hanken Grotesk', sans-serif;
+    --light-bold: 500;
+    --semi-bold: 700;
+    --bold: 800;
+}
+
+html {
+    font-size: 62.5%;
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+  }
+  
+  body {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-weight: var(--semibold);
+    line-height: 1.4;;
+  }
+  
+  .page {
+    background-color: var(--White);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .card {
+    background-color: var(--White);
+    border-radius: 20px;
+    display: flex;
+    max-width: 60rem;
+    max-height: 40rem;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    box-shadow: 0 2px 4px gray;
+  }
+
+  .card__left {
+    background: linear-gradient(var(--bg-purple), var(--bg-dark-blue));
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-width: 45rem;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    border: 1px;
+    padding: 2rem;
+    border-radius: 20px;
+    gap: 1rem;
+}
+
+.card__result {
+    font-family: var(--font-family);
+    color: var(--White);
+    font-weight: var(--semi-bold);
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    gap: 1rem;
+    opacity: 70%;
+}
+
+.card__circle {
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    max-height: 15rem;
+    background: linear-gradient(var(--circle-violet), var(--circle-blue));
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.card__circle__marks {
+    color: var(--Pale-blue);
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    font-size: 6rem;
+}
+
+.card__circle__total__marks {
+    color: var(--Pale-blue);
+    opacity: 50%;
+    font-size: 1.7rem;
+    font-family: var(--font-family);
+    font-weight: var(--light-bold);
+
+}
+
+.card__left__great {
+    color: var(--White);
+    font-weight: var(--light-bold);
+    font-family: var(--font-family);
+    font-size: 3rem;
+}
+
+.card__left__content {
+    color: var(--White);
+    font-weight: var(--light-bold);
+    font-family: var(--font-family);
+    text-align: center;
+    opacity: 60%;
+    max-width: 23rem;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.card__right {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    max-width: 40rem;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.card__right__title {
+    font-size: 2rem;
+    display: flex;
+    align-self: flex-start;
+    padding-bottom: 2rem;
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    color: var(--Dark-gray-blue);
+}
+
+.card__right__reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);    
+    align-items: center; 
+    padding: 1rem;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    border: 1px;
+    max-width: 25rem;
+    max-height: 4.5rem;
+    border-radius: 10px; 
+    width: 100%;
+    height: 100%;
+}
+
+.reaction {
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    color: var(--red);
+    font-size: 1.5rem;
+    padding-right: 5rem;
+    padding-left: 1rem;
+}
+
+.reaction__marks {
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    font-size: 1.6rem;
+    color: var(--Dark-gray-blue);
+    margin-left: 1.75rem;
+}
+
+.reaction__total__marks {
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    font-size: 1.5rem;
+    color: gray;
+    opacity: 50%;
+    padding-left: 1rem;
+}
+
+.card__right__memory {
+    background-color: hsla(39, 100%, 56%, 0.1);    
+    align-items: center;
+    padding: 1rem;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    border: 1px;
+    max-width: 25rem;
+    max-height: 4.5rem;
+    border-radius: 10px; 
+    width: 100%;
+    height: 100%;
+}
+
+.memory {
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    color: var(--yellow);
+    font-size: 1.5rem;
+    padding-right: 5rem;
+    padding-left: 1rem;
+}
+
+.memory__marks {
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    font-size: 1.6rem;
+    color: var(--Dark-gray-blue);
+    margin-left: 2.5rem;
+}
+
+.memory__total__marks {
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    font-size: 1.5rem;
+    color: gray;
+    opacity: 50%;
+    padding-left: 1rem;
+}
+
+.card__right__verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);    
+    align-items: center; 
+    padding: 1rem;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    border: 1px;
+    max-width: 25rem;
+    max-height: 4.5rem;
+    border-radius: 10px; 
+    width: 100%;
+    height: 100%;
+
+} 
+
+.verbal {
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    color: var(--green);
+    font-size: 1.5rem;
+    padding-right: 5rem;
+    padding-left: 1rem;
+}
+
+.verbal__marks {
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    font-size: 1.6rem;
+    color: var(--Dark-gray-blue);
+    margin-left: 3.8rem;
+}
+
+.verbal__total__marks {
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    font-size: 1.5rem;
+    color: gray;
+    opacity: 50%;
+    padding-left: 1rem;
+}
+
+.card__right__visual {
+    background-color: hsla(234, 85%, 35%, 0.1);    
+    align-items: center;
+    padding: 1rem;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    border: 1px;
+    max-width: 25rem;
+    max-height: 4.5rem;
+    border-radius: 10px; 
+    width: 100%;
+    margin-bottom: 2.2rem;;
+    height: 100%;
+}
+
+.visual {
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    color: var(--blue);
+    font-size: 1.5rem;
+    padding-right: 5rem;
+    padding-left: 1rem;
+}
+
+.visual__marks {
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    color: var(--Dark-gray-blue);
+    padding-left: 2rem;
+}
+
+.visual__total__marks {
+    font-family: var(--font-family);
+    font-weight: var(--semi-bold);
+    font-size: 1.5rem;
+    color: gray;
+    opacity: 50%;
+    padding-left: 1rem;
+}
+
+.button {
+    border-radius: 40px;
+    font-family: var(--font-family);
+    background-color: hsl(224, 30%, 27%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 25rem;
+    max-height: 4.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.button__content {
+    color: var(--White);
+    font-weight: var(--semi-bold);
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+}
+
+.button:hover {
+    background: linear-gradient(var(--bg-purple), var(--bg-dark-blue));
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 555px){
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* max-width: 45rem; */
+        max-height: max-content;
+        gap: 1rem;
+    }
+
+    .card__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 51rem;
+        /* max-height: 90rem; */
+        border-radius: 0 0 3rem 3rem;
+    }
+
+    .card__result {
+        padding: 0;
+    }
+
+    .card__circle {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .card__circle__marks {
+        font-size: 3rem;
+    }
+
+    .card__circle__total__marks {
+        font-size: 0.85rem;
+    }
+
+    .card__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .card__right__title {
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+        display: flex;
+        align-self: center;
+
+    }
+
+    .card__right__visual {
+        margin-bottom: 1px;
+    }
+
+    .page {
+        height: auto;
+    }
+
+    .card__left__great {
+        font-size: 1.5rem;
+    }
+
+    .card__left__content {
+        font-size: 1.4rem;
+    }
+
+    .button {
+        max-height: 3rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+}
